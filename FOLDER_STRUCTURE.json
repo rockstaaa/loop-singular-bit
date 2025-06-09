@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-06-09T21:09:09.054473",
+  "main_folder": "loop_singular_bit",
+  "structure": {
+    ".gitignore": {
+      "size_bytes": 421,
+      "size_mb": 0.0
+    },
+    "MANIFEST.in": {
+      "size_bytes": 196,
+      "size_mb": 0.0
+    },
+    "README.md": {
+      "size_bytes": 7740,
+      "size_mb": 0.01
+    },
+    "requirements.txt": {
+      "size_bytes": 173,
+      "size_mb": 0.0
+    },
+    "__init__.py": {
+      "size_bytes": 575,
+      "size_mb": 0.0
+    },
+    "compression": {
+      "loop_1bit_compressor.py": {
+        "size_bytes": 14642,
+        "size_mb": 0.01
+      }
+    },
+    "docs": {
+      "IMPLEMENTATION_SUMMARY.md": {
+        "size_bytes": 5823,
+        "size_mb": 0.01
+      },
+      "SYSTEM_STATUS.md": {
+        "size_bytes": 6171,
+        "size_mb": 0.01
+      }
+    },
+    "examples": {
+      "create_release.py": {
+        "size_bytes": 20726,
+        "size_mb": 0.02
+      },
+      "implement_system.py": {
+        "size_bytes": 24771,
+        "size_mb": 0.02
+      }
+    },
+    "models": {
+      "compressed": {
+        "mistral-7b-v0.1_compressed.json": {
+          "size_bytes": 1476,
+          "size_mb": 0.0
+        },
+        "mistral-7b-v0.1_metadata.json": {
+          "size_bytes": 384,
+          "size_mb": 0.0
+        }
+      }
+    },
+    "tests": {
+      "hardware_test.py": {
+        "size_bytes": 12373,
+        "size_mb": 0.01
+      },
+      "test_system.py": {
+        "size_bytes": 10923,
+        "size_mb": 0.01
+      }
+    },
+    "utils": {
+      "organize_files.py": {
+        "size_bytes": 13034,
+        "size_mb": 0.01
+      }
+    }
+  },
+  "file_count": 15,
+  "total_size_mb": 0.11
+}

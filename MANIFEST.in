@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include requirements.txt
+recursive-include loop_singular_bit *.py
+recursive-include docs *.md
+recursive-include examples *.py
+recursive-include tests *.py

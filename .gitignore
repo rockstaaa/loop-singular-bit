@@ -35,9 +35,14 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Project specific
+# Models
 downloaded_models/
-*.safetensors
 *.bin
-results/
-logs/
+*.safetensors
+
+# Cache
+.loop_models/
+cache/
+
+# Logs
+*.log

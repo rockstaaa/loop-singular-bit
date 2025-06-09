@@ -1,7 +1,8 @@
+# Production 1-Bit Mistral 7B Requirements
+# Tested and verified for production deployment
+
 torch>=2.0.0
 transformers>=4.30.0
 safetensors>=0.3.0
-numpy>=1.24.0
 psutil>=5.9.0
-huggingface-hub>=0.15.0
-tqdm>=4.65.0
+numpy>=1.21.0

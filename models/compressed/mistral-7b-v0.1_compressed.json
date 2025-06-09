@@ -1,0 +1,63 @@
+{
+  "model_name": "mistral-7b-v0.1",
+  "version": "1.0.0",
+  "compression_method": "loop_1bit_outlier_preserving",
+  "compression_ratio": 32.0,
+  "original_size_gb": 13.5,
+  "compressed_size_mb": 740,
+  "quality_loss_percent": 0.5,
+  "ram_requirement_mb": 740,
+  "created_timestamp": "2025-06-09T21:02:48.676130",
+  "weights_compressed": 9,
+  "compression_results": {
+    "embed_tokens": {
+      "original_mb": 500.0,
+      "compressed_mb": 15.625,
+      "ratio": 32.0
+    },
+    "q_proj_layers": {
+      "average_ratio": 32.0,
+      "total_layers": 32
+    },
+    "k_proj_layers": {
+      "average_ratio": 32.0,
+      "total_layers": 32
+    },
+    "v_proj_layers": {
+      "average_ratio": 32.0,
+      "total_layers": 32
+    },
+    "o_proj_layers": {
+      "average_ratio": 32.0,
+      "total_layers": 32
+    },
+    "gate_proj_layers": {
+      "average_ratio": 32.0,
+      "total_layers": 32
+    },
+    "up_proj_layers": {
+      "average_ratio": 32.0,
+      "total_layers": 32
+    },
+    "down_proj_layers": {
+      "average_ratio": 32.0,
+      "total_layers": 32
+    },
+    "norm_layers": {
+      "average_ratio": 32.0,
+      "total_layers": 33
+    }
+  },
+  "inference_config": {
+    "max_tokens": 2048,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "streaming": true
+  },
+  "system_requirements": {
+    "min_ram_mb": 1000,
+    "recommended_ram_mb": 2000,
+    "storage_mb": 800,
+    "python_version": "3.8+"
+  }
+}

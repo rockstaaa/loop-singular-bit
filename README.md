@@ -6,12 +6,16 @@ Extreme Model Compression through Outlier-Preserving 1-Bit Quantization
 [![GitHub stars](https://img.shields.io/github/stars/rockstaaa/loop-singular-bit.svg)](https://github.com/rockstaaa/loop-singular-bit/stargazers)
 [![Verified](https://img.shields.io/badge/Status-Verified-green.svg)](https://github.com/rockstaaa/loop-singular-bit)
 
+## 🌐 **TRY IT ONLINE - INTERACTIVE DEMO**
+
+**🎮 HuggingFace Spaces:** [loop-singular-bit](https://huggingface.co/spaces/rockstaaa/loop-singular-bit) - Try compression and text generation in your browser!
+
 ## 🎉 **COMPLETE WORKING SYSTEM - VERIFIED RESULTS**
 
-**✅ 32× compression ratio** - Proven on real Mistral 7B model  
-**✅ 740MB RAM usage** - Measured during actual inference  
-**✅ 99.5% quality preservation** - 0.5% quality loss verified  
-**✅ No original download** - Use compressed models directly  
+**✅ 32× compression ratio** - Proven on real Mistral 7B model
+**✅ 740MB RAM usage** - Measured during actual inference
+**✅ 99.5% quality preservation** - 0.5% quality loss verified
+**✅ No original download** - Use compressed models directly
 
 ---
 

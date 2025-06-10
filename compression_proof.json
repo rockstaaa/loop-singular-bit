@@ -1,0 +1,102 @@
+{
+  "test_timestamp": "2025-06-10T10:19:26.945202",
+  "test_type": "compression_proof",
+  "results": [
+    {
+      "layer_name": "proof_layer_1",
+      "original_tensor_stats": {
+        "mean": -4.799912858288735e-06,
+        "std": 0.020044760778546333,
+        "min": -0.09180973470211029,
+        "max": 0.09258154779672623,
+        "shape": [
+          512,
+          512
+        ],
+        "total_parameters": 262144
+      },
+      "compression_results": {
+        "compression_ratio": 3.493262173894214,
+        "quality_error_percent": 5.212797057447336,
+        "original_size_mb": 1.0,
+        "compressed_size_mb": 0.28626537322998047,
+        "compression_time_seconds": 0.07994747161865234
+      },
+      "reconstruction_metrics": {
+        "mse": 0.00012888059427496046,
+        "mae": 0.009611943736672401,
+        "max_error": 0.02788287028670311,
+        "shape_match": true
+      },
+      "verification": {
+        "compression_working": true,
+        "quality_acceptable": true,
+        "reconstruction_working": true
+      }
+    },
+    {
+      "layer_name": "proof_layer_2",
+      "original_tensor_stats": {
+        "mean": -1.4615373402193654e-05,
+        "std": 0.019993048161268234,
+        "min": -0.0921761691570282,
+        "max": 0.09660449624061584,
+        "shape": [
+          1024,
+          1024
+        ],
+        "total_parameters": 1048576
+      },
+      "compression_results": {
+        "compression_ratio": 3.493401830363241,
+        "quality_error_percent": 5.0739605059841235,
+        "original_size_mb": 4.0,
+        "compressed_size_mb": 1.1450157165527344,
+        "compression_time_seconds": 0.30429649353027344
+      },
+      "reconstruction_metrics": {
+        "mse": 0.00012802521814592183,
+        "mae": 0.009578656405210495,
+        "max_error": 0.02776089310646057,
+        "shape_match": true
+      },
+      "verification": {
+        "compression_working": true,
+        "quality_acceptable": true,
+        "reconstruction_working": true
+      }
+    },
+    {
+      "layer_name": "proof_layer_3",
+      "original_tensor_stats": {
+        "mean": -1.9143979443470016e-05,
+        "std": 0.020001906901597977,
+        "min": -0.09732285887002945,
+        "max": 0.09335798770189285,
+        "shape": [
+          2048,
+          1024
+        ],
+        "total_parameters": 2097152
+      },
+      "compression_results": {
+        "compression_ratio": 3.4934265623600993,
+        "quality_error_percent": 5.024861533051352,
+        "original_size_mb": 8.0,
+        "compressed_size_mb": 2.29001522064209,
+        "compression_time_seconds": 0.6291384696960449
+      },
+      "reconstruction_metrics": {
+        "mse": 0.0001281462173210457,
+        "mae": 0.009581448510289192,
+        "max_error": 0.027859032154083252,
+        "shape_match": true
+      },
+      "verification": {
+        "compression_working": true,
+        "quality_acceptable": true,
+        "reconstruction_working": true
+      }
+    }
+  ]
+}

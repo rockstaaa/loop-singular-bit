@@ -1,0 +1,43 @@
+{
+  "test_timestamp": "2025-06-10T10:19:28.935673",
+  "test_type": "memory_management_proof",
+  "measurements": [
+    {
+      "step": 0,
+      "memory_mb": 333.0546875,
+      "memory_usage_percent": 83.263671875,
+      "within_limit": true,
+      "timestamp": "2025-06-10T10:19:28.937309"
+    },
+    {
+      "step": 1,
+      "memory_mb": 333.0546875,
+      "memory_usage_percent": 83.263671875,
+      "within_limit": true,
+      "timestamp": "2025-06-10T10:19:29.091648"
+    },
+    {
+      "step": 2,
+      "memory_mb": 333.0546875,
+      "memory_usage_percent": 83.263671875,
+      "within_limit": true,
+      "timestamp": "2025-06-10T10:19:29.241487"
+    },
+    {
+      "step": 3,
+      "memory_mb": 333.0546875,
+      "memory_usage_percent": 83.263671875,
+      "within_limit": true,
+      "timestamp": "2025-06-10T10:19:29.391497"
+    },
+    {
+      "step": 4,
+      "memory_mb": 333.0546875,
+      "memory_usage_percent": 83.263671875,
+      "within_limit": true,
+      "timestamp": "2025-06-10T10:19:29.545936"
+    }
+  ],
+  "initial_memory_mb": 333.0546875,
+  "final_memory_mb": 333.05859375
+}

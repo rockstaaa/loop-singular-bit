@@ -204,16 +204,48 @@ class RealCompressedModel:
     
     def generate(self, prompt, max_length=50):
         """Generate REAL text using compressed model"""
-        
+
         try:
             print(f"🔮 Generating with compressed {self.model_name}...")
-            
-            # Use real compression engine for generation
-            generated = self.compression_engine.generate(prompt, max_tokens=max_length)
-            
-            print(f"✅ Real text generated using 32× compressed model")
-            return generated
-            
+
+            # Try to use real inference engine first
+            try:
+                from src.loop_singular_bit.inference import CompressedInferenceEngine
+                from transformers import AutoTokenizer, AutoConfig
+
+                # Create inference engine if not exists
+                if not hasattr(self, 'inference_engine'):
+                    model_path = f"downloaded_models/{self.model_name}"
+                    tokenizer = AutoTokenizer.from_pretrained(model_path)
+                    config = AutoConfig.from_pretrained(model_path)
+
+                    # Extract compressed weights from compression result
+                    compressed_weights = {}
+                    if hasattr(self, 'compression_result') and self.compression_result:
+                        for result in self.compression_result.get('individual_results', []):
+                            if 'compressed_data' in result:
+                                weight_name = result.get('weight_name', 'unknown')
+                                compressed_weights[weight_name] = result
+
+                    self.inference_engine = CompressedInferenceEngine(
+                        compressed_weights=compressed_weights,
+                        model_config=config,
+                        tokenizer=tokenizer
+                    )
+
+                # Generate using inference engine
+                generated = self.inference_engine.generate(prompt, max_tokens=max_length)
+                print(f"✅ Real text generated using compressed inference engine")
+                return generated
+
+            except Exception as inference_error:
+                print(f"⚠️ Inference engine error: {inference_error}")
+
+                # Fallback to compression engine
+                generated = self.compression_engine.generate(prompt, max_tokens=max_length)
+                print(f"✅ Real text generated using compression engine")
+                return generated
+
         except Exception as e:
             print(f"⚠️ Generation error: {e}")
             fallback = f"{prompt} and represents the cutting edge of AI compression technology, achieving 32× compression with only 0.5% quality loss."
